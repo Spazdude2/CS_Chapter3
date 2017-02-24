@@ -10,7 +10,7 @@ namespace Admission
         static void Main(string[] args)
         {
             Console.Write("Enter GPA: ");
-            double gpa = Convert.ToInt32(Console.ReadLine());
+            double gpa = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Enter admission test score: ");
             int score = Convert.ToInt32(Console.ReadLine());
@@ -19,6 +19,10 @@ namespace Admission
             if ((gpa >= 3.0 && score >= 60) || (gpa < 3.0 && score >= 80)) 
             {
                 Console.WriteLine("Accept");
+            }
+            else
+            {
+                Console.WriteLine("Decline");
             }
         }
     }
